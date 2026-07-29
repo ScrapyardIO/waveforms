@@ -16,7 +16,7 @@ class Rangefinder extends Sensor
         parent::__construct($circuit);
     }
 
-    public function distance(DistanceUnit $unit): float
+    public function distance(DistanceUnit $unit = DistanceUnit::MM): float
     {
         return $this->circuit->distance($unit);
     }
