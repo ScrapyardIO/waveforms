@@ -6,11 +6,15 @@ use Fabricate\Core\Machine as ScrapyardIOMachine;
 use Fabricate\NutsAndBolts\AggregateServiceProvider;
 use Fabricate\Contracts\Chassis\BindingResolutionException;
 use ScrapyardIO\Waveforms\Acceleration\AccelerometerServiceProvider;
+use ScrapyardIO\Waveforms\Distance\DistanceSensorServiceProvider;
+use ScrapyardIO\Waveforms\Environment\Providers\EnvironmentalSensorsServiceProvider;
 
 class WaveformsServiceProvider extends AggregateServiceProvider
 {
     protected array $providers = [
         AccelerometerServiceProvider::class,
+        DistanceSensorServiceProvider::class,
+        EnvironmentalSensorsServiceProvider::class,
     ];
 
     /**

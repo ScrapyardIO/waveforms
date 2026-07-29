@@ -21,7 +21,9 @@
         "fabricate/circuits": "^0.6.0"
     },
     "replace": {
-        "waveforms/acceleration": "self.version"
+        "waveforms/acceleration": "self.version",
+        "waveforms/distance": "self.version",
+        "waveforms/environment": "self.version"
     },
     "require-dev": {
         "pestphp/pest": "^4"
