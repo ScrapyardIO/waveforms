@@ -62,6 +62,6 @@ class Rangefinder extends Sensor
             return new static($circuit);
         }
 
-        throw new SensorException("Circuit [$driver] is not an Accelerometer.");
+        throw new SensorException("Circuit [$driver] is not a Rangefinder.");
     }
 }

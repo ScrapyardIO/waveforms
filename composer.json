@@ -1,6 +1,6 @@
 {
     "name": "scrapyard-io/waveforms",
-    "description": "The ScrapyardIO Sensor Framework.",
+    "description": "The ScrapyardIO Sensor/Actuator Framework.",
     "keywords": ["framework", "scrapyard-io"],
     "license": "MIT",
     "version": "0.6.0",
@@ -17,13 +17,16 @@
     ],
     "require": {
         "php": "^8.4|^8.5|^8.6",
+        "fabricate/actuation": "^0.6.0",
         "fabricate/sensors": "^0.6.0",
         "fabricate/circuits": "^0.6.0"
     },
     "replace": {
         "waveforms/acceleration": "self.version",
         "waveforms/distance": "self.version",
-        "waveforms/environment": "self.version"
+        "waveforms/environment": "self.version",
+        "waveforms/input": "self.version",
+        "waveforms/motion": "self.version"
     },
     "require-dev": {
         "pestphp/pest": "^4"
@@ -36,7 +39,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+            "ScrapyardIO\\Waveforms\\Tests\\": "tests/"
         }
     },
     "extra": {

@@ -21,6 +21,33 @@ return [
     ],
     'lux' => [
         'enabled' => false,
-    ]
+    ],
+    'fan' => [
+        'enabled' => false,
+    ],
+    'positional-servo' => [
+        'enabled' => false,
+    ],
+    'continuous-servo' => [
+        'enabled' => false,
+    ],
+    'button' => [
+        'enabled' => false,
+    ],
+    'button-pad' => [
+        'enabled' => false,
+    ],
+    'potentiometer' => [
+        'enabled' => false,
+    ],
+    'touch' => [
+        'enabled' => false,
+    ],
+    'pointer' => [
+        'enabled' => false,
+    ],
+    'game-controller' => [
+        'enabled' => false,
+    ],
 
 ];

@@ -8,6 +8,8 @@ use Fabricate\Contracts\Chassis\BindingResolutionException;
 use ScrapyardIO\Waveforms\Acceleration\AccelerometerServiceProvider;
 use ScrapyardIO\Waveforms\Distance\DistanceSensorServiceProvider;
 use ScrapyardIO\Waveforms\Environment\Providers\EnvironmentalSensorsServiceProvider;
+use ScrapyardIO\Waveforms\Input\InputServiceProvider;
+use ScrapyardIO\Waveforms\Motion\MotionServiceProvider;
 
 class WaveformsServiceProvider extends AggregateServiceProvider
 {
@@ -15,6 +17,8 @@ class WaveformsServiceProvider extends AggregateServiceProvider
         AccelerometerServiceProvider::class,
         DistanceSensorServiceProvider::class,
         EnvironmentalSensorsServiceProvider::class,
+        InputServiceProvider::class,
+        MotionServiceProvider::class,
     ];
 
     /**
