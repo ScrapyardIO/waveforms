@@ -25,6 +25,12 @@ return [
     'fan' => [
         'enabled' => false,
     ],
+    'led' => [
+        'enabled' => false,
+    ],
+    'neopixel' => [
+        'enabled' => false,
+    ],
     'positional-servo' => [
         'enabled' => false,
     ],

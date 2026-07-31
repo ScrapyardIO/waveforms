@@ -9,6 +9,7 @@ use ScrapyardIO\Waveforms\Acceleration\AccelerometerServiceProvider;
 use ScrapyardIO\Waveforms\Distance\DistanceSensorServiceProvider;
 use ScrapyardIO\Waveforms\Environment\Providers\EnvironmentalSensorsServiceProvider;
 use ScrapyardIO\Waveforms\Input\InputServiceProvider;
+use ScrapyardIO\Waveforms\Light\LightServiceProvider;
 use ScrapyardIO\Waveforms\Motion\MotionServiceProvider;
 
 class WaveformsServiceProvider extends AggregateServiceProvider
@@ -18,6 +19,7 @@ class WaveformsServiceProvider extends AggregateServiceProvider
         DistanceSensorServiceProvider::class,
         EnvironmentalSensorsServiceProvider::class,
         InputServiceProvider::class,
+        LightServiceProvider::class,
         MotionServiceProvider::class,
     ];
 

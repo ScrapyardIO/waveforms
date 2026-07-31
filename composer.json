@@ -26,6 +26,7 @@
         "waveforms/distance": "self.version",
         "waveforms/environment": "self.version",
         "waveforms/input": "self.version",
+        "waveforms/light": "self.version",
         "waveforms/motion": "self.version"
     },
     "require-dev": {
